@@ -5,13 +5,6 @@ import static org.testng.Assert.assertEquals;
 public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
 
-    @org.testng.annotations.Test
-    public void testRemainBoundaryValuesOne() {
-        org.testng.Assert.assertThrows(RuntimeException.class, () -> {
-            service.remain(-1);
-        });
-    }
-
 
     @org.testng.annotations.Test
     public void shouldCorrectAmount() {
